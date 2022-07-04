@@ -1,32 +1,51 @@
 <!doctype html>
-<html>
-<head>
-<title>Pesan Buat ayang</title>
-</head>   
+ <html>
+ <head>
+    <title>Sayang</title> 
+    <style>
+    .hati{
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background: #d16ba5;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(45deg)
+}
+ 
+.hati::before{
+    content: "";
+    position: absolute;
+    background:  #d16ba5;
+    height: 160px;
+    width: 100px;
+    transform: rotate(-90deg);
+    border-radius: 200px 200px 0 0;
+    left: -30px;
+    top: 30px;
+}   
+      </style> 
+  </head>   
     
-<body>         
+  <body>     
+      <center>
+      <h1>Mas Fadli</h1>
+      <div class="hati"></div>
+      <h1>Dek Arlinda</h1>
+      </center>         
       <form>
-          <center>
-          <h1></h1>
-      <button type="button">Klik Aku</button>
-          </center>
+          <center><button type="button">Klik Dong</button></center>
       </form>
  
       <script>
-      let btn = document.getElementsByTagName('button')[0];
-      let h1 = document.getElementsByTagName('h1')[0];
+     let btn = document.getElementsByTagName('button')[0];
           
-        btn.addEventListener('click', function(){
-            setTimeout(function(){
-                h1.innerHTML = "Halo sayang :D";
-            }, 100);
-            setTimeout(function(){
-               h1.innerHTML = " Aku mencintaimu :D";
-            }, 1500);
-            setTimeout(function(){
-               h1.innerHTML = " Jangan pernah tinggalin aku yah :)";
-            }, 3000);
-        });
+      btn.addEventListener('click', function(){
+      alert('Hai manis :)');
+      alert('Mau bilang sesuatu buat kamu :)');
+      alert('Jaga kesehatan ya :)');
+      alert('Jangan lupa makan :)');
+      alert('I love you :)');
+      });
       </script>
   </body>
 </html>
